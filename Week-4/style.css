@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #00fff7; /* Sayfanın ana rengi */
+    --secondary-color: #6c757d; /* İkincil renk */
+    --font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Font ailesi */
+    --error-color: #721c24; /* Hata mesajları için metin rengi */
+    --error-bg: #f8d7da; /* Hata mesajları için arka plan rengi */
+    --error-border: #f5c6cb; /* Hata mesajları için kenarlık rengi */
+}
+
+body {
+    font-family: var(--font-family); /* Sayfadaki metin fontu */
+    color: var(--secondary-color); /* Genel metin rengi */
+}
+
+#gallery {
+    margin-top: 20px; /* Galeri üst boşluğu */
+}
+
+.card {
+    margin-bottom: 20px; /* Kartlar arasındaki boşluk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Kart gölge efekti */
+    transition: box-shadow 0.3s, transform 0.5s ease; /* Kart hover efekti animasyonu */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Hover durumunda gölge efekti güncellemesi */
+}
+
+.card-img-top {
+    height: 200px; /* Kart üstündeki resim yüksekliği */
+    object-fit: cover; /* Resmin kart içinde uygun bir şekilde yerleştirilmesi */
+}
+
+.card-img-top:hover, .card:hover .card-img-top {
+    transform: scale(1.1); /* Kart veya resim hover durumunda hafif büyütme */
+}
+
+#loading, #error-message {
+    padding: 20px 0; /* Yükleniyor veya hata mesajı bölümlerinin iç içe boşluğu */
+}
+
+#error-message {
+    color: var(--error-color); /* Hata mesajları metin rengi */
+    background-color: var(--error-bg); /* Hata mesajları arka plan rengi */
+    border: 1px solid var(--error-border); /* Hata mesajları için kenarlık rengi */
+    border-radius: 5px; /* Hata mesajları köşe yuvarlama */
+}
+
+.image-container:hover .image-overlay, .btn:hover, .btn:focus {
+    opacity: 1; /* Hover durumunda görünürlük artışı */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Hover durumunda gölge efekti */
+    transform: translateY(-2px); /* Hover durumunda yatay kayma efekti */
+}
+
+.image-overlay {
+    position: absolute; /* Resmin üzerine ek bilgilerin konumunu belirleme */
+    bottom: 0; /* En alt kısmına hizalama */
+    background: rgba(0, 0, 0, 0.7); /* Ek bilgilerin arka plan rengi ve opaklık */
+    color: #f1f1f1; /* Ek bilgilerin metin rengi */
+    width: 100%; /* Tam genişlik */
+    transition: 0.5s ease; /* Ek bilgilerin geçiş efekti süresi */
+    opacity: 0; /* Başlangıçta görünmez */
+    padding: 20px; /* Ek bilgilerin iç içe boşluğu ve kenar boşluğu */
+    text-align: center; /* Metin hizalaması */
+}
+
+.image-title {
+    font-size: 20px; /* Resim başlığı font büyüklüğü */
+    font-weight: bold; /* Kalın font ağırlığı */
+}
+
+.image-author {
+    font-size: 16px; /* Yazar adı font büyüklüğü */
+}
+
+footer {
+    background-color: var(--primary-color); /* Footer arka plan rengi */
+    color: #000000; /* Footer metin rengi */
+    padding: 20px 0; /* Footer iç içe boşluğu */
+    text-align: center; /* Metin hizalaması */
+    font-size: 14px; /* Footer metin font büyüklüğü */
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px; /* Küçük ekranlarda resim yüksekliği */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: auto; /* Orta büyüklükteki ekranlarda resim yüksekliği otomatik ayarlanır */
+    }
+}
+
+.lightbox, .modal-fullscreen {
+    display: none; /* Lightbox ve tam ekran modal penceresi başlangıçta gizlenmiş durumda */
+    position: fixed; /* Sabit pozisyonda */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Opak siyah arka plan */
+}
+
+.lightbox img, .modal-fullscreen img {
+    max-width: 80%; /* Lightbox ve modal içindeki resmin maksimum genişliği */
+    max-height: 80%; /* Lightbox ve modal içindeki resmin maksimum yüksekliği */
+    position: absolute; /* Sabit pozisyonda */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Resmi ekranın ortasına hizalama */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    #searchInput, #searchButton {
+        border-radius: 25px; /* Küçük ekranlarda köşe yuvarlama */
+        display: block; /* Blok düzenleme */
+        width: 100%; /* Tam genişlik */
+        margin-bottom: 10px; /* Alt boşluk ekleme */
+    }
+    #searchButton {
+        border-left: 2px solid var(--primary-color); /* Sol kenarlık ekleme */
+    }
+}
