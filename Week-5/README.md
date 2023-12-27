@@ -1,1 +1,0 @@
-5. Hafta ödevi Basit bir react ile oluşturulmuş biyografi sitesi. 
