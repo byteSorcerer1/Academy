@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+  background-color: #6ac2a6;
+  color: #000000;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+/* Todo Wrapper Styles */
+.todo-wrapper {
+  background-color: #83d9d9;
+  padding: 2%;
+  width: 80%;
+  margin: 3% auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgb(26, 25, 25);
+}
+
+/* Todo Input Styles */
+.todo-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 0 0 25px;
+  margin-bottom: 25px;
+}
+
+.todo-input-item {
+  margin-right: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.todo-input-item label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.todo-input-item input,
+.todo-input-item select {
+  border: none;
+  padding: 8px;
+  width: 250px;
+}
+
+.todo-input-item input:focus,
+.todo-input-item select:focus {
+  outline: 2px solid rgb(0, 230, 122);
+}
+
+/* Button Styles */
+.primary-btn {
+  background-color: #06ffcd;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  margin-top: 25px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Button Area Styles */
+.btn-area {
+  margin-bottom: 10px;
+}
+
+.secondaryBtn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 0px;
+  border: none;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.btn-area .active {
+  background-color: rgb(4, 192, 104);
+}
+
+/* Todo List Styles */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Todo List Item Styles */
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 25px;
+  margin: 0 0 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.todo-list-item:hover {
+  transform: scale(1.02);
+}
+
+/* Todo List Item Content Styles */
+.todo-list-item h3 {
+  font-size: 20px;
+  color: rgb(0, 230, 122);
+  font-weight: bold;
+  margin: 0;
+}
+
+.todo-list-item p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgb(179, 178, 178);
+}
+
+/* Icon Styles */
+.icon,
+.edit-icon,
+.check-icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.icon:hover,
+.edit-icon:hover,
+.check-icon:hover {
+  color: red;
+}
+
+.check-icon {
+  color: rgb(0, 230, 122);
+  margin-bottom: 5px;
+}
+
+.check-icon:hover {
+  color: rgb(4, 192, 104);
+}
+
+.edit-icon {
+  color: orange;
+}
+
+.edit-icon:hover {
+  color: darkorange; 
+}
+
+/* Edit Form Styles */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form label {
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form select {
+  margin-top: 5px;
+}
+
+.edit-form button {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .todo-wrapper {
+    width: 90%;
+  }
+
+  .todo-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-input-item {
+    margin-right: 0;
+  }
+
+  .primary-btn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .category,
+  .priority {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  .todo-list-item {
+    padding: 15px;
+  }
+
+  .icon,
+  .edit-icon,
+  .check-icon {
+    font-size: 18px;
+  }
+
+  .category,
+  .priority,
+  .todo-list-item h3,
+  .todo-list-item p {
+    font-size: 14px;
+  }
+}
