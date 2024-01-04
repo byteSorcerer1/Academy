@@ -1,6 +1,9 @@
 # MCA ToDo App
 
 MCA ToDo App is a simple task management application.
+## Screenshots
+
+![App Screenshot](screenshot.png)
 
 ## Features
 
