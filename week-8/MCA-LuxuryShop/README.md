@@ -11,21 +11,18 @@ Luxury Store is a simple e-commerce platform with a focus on curated luxury item
 
 ## Getting Started
 
-1. **Clone the repository:**
+1. **Download the repository:**
 
-   ```bash
-   git clone https://github.com/your-username/luxury-store.git
+
 2. **Install dependencies:**
 
     ```bash
-    Copy code
-    cd luxury-store
+    cd MCA-LuxuryShop
     npm install
 
 3.  **Run the development server:**
 
     ```bash
-    Copy code
     npm start
 
 
