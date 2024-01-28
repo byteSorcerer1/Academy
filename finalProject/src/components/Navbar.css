@@ -1,0 +1,81 @@
+.navbar {
+    background: linear-gradient(to right, #ffffff, #42ea0a);
+    padding: 1rem;
+    border-bottom: 3px solid #76453B;
+    border-style: outset;
+    box-shadow: 0 1px 3px rgba(0, 255, 166, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #17aa71;
+    margin-left: 0;
+}
+
+.navbar-brand {
+    padding-right: 2rem;
+    color: #ffffff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link,
+.form-control,
+.btn {
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #0ef06c;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #1eff00;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn {
+    border-radius: 0;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.nav-link:focus,
+.form-control:focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.nav-link.active,
+.form-control:focus,
+.btn:focus {
+    background-color: #0ef06c;
+    color: #007bff;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        margin: 0.25rem 0;
+    }
+}

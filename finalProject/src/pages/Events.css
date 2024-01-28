@@ -1,0 +1,43 @@
+.events{
+    margin-top: 90px;
+    
+}
+.mycarousel{
+    height: 65vh!important;
+    margin-bottom: 0!important;
+}
+.caption{margin-bottom: 40px;}
+
+.events .carousel-item{
+    height: 65vh!important;
+    object-fit: fill;
+    background-color: rgba(0, 0, 0, 0.3)! important;
+}
+.carousel-caption p{
+    font-size: 15px ;
+}
+.text-center{
+    margin-top: 0 !important;
+}
+.caption h2{
+    margin-top: 10px!important;
+}
+
+.events-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.events-container .card-img-top{
+    height: 200px !important;
+
+}
+
+.event{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); 
+}

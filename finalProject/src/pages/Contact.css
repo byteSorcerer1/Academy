@@ -1,0 +1,32 @@
+.contact{
+    margin-top: 100px;
+} 
+
+.adress{
+    margin: 30px;
+}
+
+.contact-info>p{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 5px;
+}
+  
+.contact-info a{
+    color: black!important;
+}
+
+.contactButton {
+    margin-top: 20px;
+    background-color: #449ab6;
+    color: #fff;
+    border: 1px solid #225161;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contactButton:hover {
+    background-color: #225161;
+  }
+  

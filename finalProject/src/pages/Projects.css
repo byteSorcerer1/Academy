@@ -1,0 +1,19 @@
+.projects{
+   margin-top: 100px;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.projects-container .card-img-top{
+    height: 200px !important;
+}
+.project{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.project:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+}

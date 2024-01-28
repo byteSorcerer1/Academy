@@ -1,0 +1,29 @@
+
+.belediye-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between; 
+    grid-row-gap: 25px;
+    grid-column-gap: 20px;
+    
+    font-size: 18px;
+    
+  }
+  .stat-item {
+    text-align: center; 
+    background-color: #F5F5F5; 
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+  .stat-item:hover{
+    background-color: #04ff71;
+    color: #F5F5F5;
+  }
+  .stat-item:hover .icon{
+    color: #F5F5F5;
+  }
+  .icon {
+    color: #DF826C;
+  }
